@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Опитування відвідувачів сайту</title>
+    </head>
+    <body>
+        <h1>Опитування відвідувачів сайту</h1>
+        <form action="https://formspree.io/rostyklevkiv@gmail.com" method="POST">
+            <fieldset>
+                <legend>Ваше ім'я:</legend>
+                <input type="text" name="name" id="name" required>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Стать:</legend>
+                <input type="radio" name="gender" value="male" checked>
+                Чолвік<br>
+                <input type="radio" name="gender" value="female">
+                Жінка<br>
+            </fieldset>
+            <fieldset>
+                <legend>Ваш вік:</legend>
+                <input type="text" name="age" required>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Як Ви потрапили на наш сайт?</legend>
+                <select name="country">
+                    <option value="none selected">Оберіть нижче</option>
+                    <option value="search">Пошукові системи</option>
+                    <option value="social">Соціальні мережі</option>
+                    <option value="friend">Порада друга</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Які пристрої Ви використовуєте для виходу в інтернет?</legend>
+                <input type="checkbox" name="pc" value="PC"/>
+                ПК/Ноутбук<br/>
+                <input type="checkbox" name="tablet" value="Tablet"/>
+                Плашшет/Смартфон<br/>
+                <input type="checkbox" name="other" value="Other"/>
+                Інший пристрій<br/>
+            </fieldset>
+            <fieldset>
+                <legend>Дайте оцінку інформаційному наповненню сайту:</legend>
+                <input type="radio" name="rating" value="5" checked>
+                Відмінно<br>
+                <input type="radio" name="rating" value="4">
+                Добре<br>
+                <input type="radio" name="rating" value="3">
+                Задовільно<br>
+                <input type="radio" name="rating" value="2">
+                Незадовільно<br>
+                <input type="radio" name="rating" value="other">
+                Складно відповісти<br>
+            </fieldset>
+            <fieldset>
+                <legend>Коментарі/Побажання</legend>
+                <textarea name="comments" rows="5" maxlength="300" cols="60"></textarea>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Введіть Ваш email, якщо бажаєте отримати зворотній зв'язок:</legend>
+                <input type="email" name="email" id="email">
+                <br>
+            </fieldset>
+            <br>
+            <input type="submit" name="send" value="Надіслати">
+            <input type="reset" value="Очистити">
+        </form>
+    </body>
+</html>
